@@ -26,8 +26,8 @@ import com.microsoft.frameworklauncher.zookeeperstore.ZookeeperStore;
 
 import java.util.Map;
 
-// Publish current FrameworkInfo to a public HDFS file
-// This is used to improve the scalability to fetch current FrameworkInfo,
+// Publish current running FrameworkInfo to a public HDFS file
+// This is used to improve the scalability to fetch current running FrameworkInfo,
 // because fetch from a per Framework HDFS FrameworkInfo file is more scalable
 // than fetch from a global single instance LauncherWebServer.
 public class FrameworkInfoPublisher extends AbstractService {  // THREAD SAFE
